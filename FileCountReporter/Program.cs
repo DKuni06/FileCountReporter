@@ -11,9 +11,18 @@ while (!Directory.Exists(filePath))
         Console.WriteLine("Path cannot be empty. Try again.\n");
         continue;
     }
-    else
+    else if (!Directory.Exists(filePath))
     {
         Console.WriteLine("That directory does not exist. Try again.\n");
     }
 }
+string[] files = Directory.GetFiles(filePath);
+string[] folders = Directory.GetDirectories(filePath);
+int fileCount = files.Length;
+int folderCount = folders.Length;
+
+Console.WriteLine("Files in directory: " + fileCount);
+Console.WriteLine("Folders in directory: " + folderCount);
+Console.WriteLine("Total count: " + (fileCount + folderCount));
+
 
