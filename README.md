@@ -33,6 +33,7 @@ Folders in directory: 3
 Total count: 15
 ```
 <img width="1102" height="225" alt="Screenshot 2026-10-28 144553" src="https://github.com/user-attachments/assets/29864461-48b4-4959-959f-6f1416ba412e" />
+
 ## Counting behavior
 
 The application counts only files and folders directly within the selected directory. It does not recursively count the contents of nested folders.
